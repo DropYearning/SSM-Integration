@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 整个Spring Framework的配置分成三个部分  -->
+    <!--  1、配置Mybatis（dao）层      -->
+    <import resource="spring-dao.xml"/>
+    <!--  2、配置业务层      -->
+    <import resource="spring-service.xml"/>
+    <!--  3、配置SpringMVC      -->
+    <import resource="spring-mvc.xml"/>
+</beans>
